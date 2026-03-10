@@ -1,0 +1,12 @@
+---
+description: 
+globs: "**/*.py"
+alwaysApply: false
+---
+
+# Protoporos Python Conventions
+
+- **Single file:** V1 lives in one `main.py`. Do not split into multiple modules or packages.
+- **No external dependencies:** Use only Python 3 built-ins. Use `random` with a fixed seed (e.g. `random.seed(42)`) for reproducibility.
+- **README is source of truth:** All formulas, agent fields, resolution order, alliance rules, adaptation table, and outcome shape are defined in README.md. Code must match the README; do not guess or invent formulas.
+- **Keep it simple:** Prefer clear, readable code and small functions. No over-engineering.
